@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+if [ -z "$(docker network ls --filter name=^ffc-sfd$ --format={{.Name}})" ]; then
+  echo "Creating ffc-sfd Docker network"
+  docker network create ffc-sfd
+fi
+
+set -e
+projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)"
+payments="true"
+
+show_help() {
+  echo "
+    Usage: path/to/ffc-sfd-core [OPTION...]
+    Run services.
+
+    Options:
+      -h, --help       display this help text
+    "
+}
+
+while :; do
+  case $1 in    
+    -h|--help)   # Call a "show_help" function to display a synopsis, then exit.
+      show_help
+      exit
+      ;;
+    *)
+      break
+  esac
+
+  shift
+done
+
+cd "${projectRoot}"
+
+./ffc-sfd-landing-page/scripts/start -d;
+./ffc-sfd-auth/scripts/start -d;
+./ffc-sfd-proxy/scripts/start -d;
+./ffc-sfd-data/scripts/start -d;
+./ffc-sfd-ahwr-stub/scripts/start -d;

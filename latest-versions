@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+echo 'ffc-sfd-landing-page' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-landing-page/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-auth' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-auth/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-proxy' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-proxy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-ingress' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-ingress/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-data' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-data/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-ahwr-stub' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-ahwr-stub/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'

@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+# Clone repositories managed by this project
+set -e
+projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)
+
+(
+  cd "${projectRoot}"
+
+  printf "\nCloning repositories\n"
+
+  test -d ffc-sfd-landing-page\
+    && >&2 echo "The 'ffc-sfd-landing-page' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-landing-page.git
+  test -d ffc-sfd-auth\
+    && >&2 echo "The 'ffc-sfd-auth' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-auth.git
+  test -d ffc-sfd-proxy\
+    && >&2 echo "The 'ffc-sfd-proxy' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-proxy.git
+  test -d ffc-sfd-ingress\
+    && >&2 echo "The 'ffc-sfd-ingress' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-ingress.git
+    test -d ffc-sfd-data\
+    && >&2 echo "The 'ffc-sfd-data' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-data.git
+  test -d ffc-sfd-ahwr-stub\
+    && >&2 echo "The 'ffc-sfd-ahwr-stub' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-ahwr-stub.git
+)
