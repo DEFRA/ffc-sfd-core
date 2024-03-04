@@ -38,5 +38,5 @@ cd "${projectRoot}"
 cd ./ffc-sfd-data && \
   docker-compose build
 cd "${projectRoot}"
-cd ./ffc-sfd-ahwr-stub && \
+cd ./ffc-sfd-ahwp-stub && \
   docker-compose build

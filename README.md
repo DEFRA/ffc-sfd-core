@@ -12,7 +12,7 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 - [ffc-sfd-proxy](https://github.com/defra/ffc-sfd-proxy)
 - [ffc-sfd-ingress](https://github.com/defra/ffc-sfd-ingress)
 - [ffc-sfd-data](https://github.com/defra/ffc-sfd-data)
-- [ffc-sfd-ahwr-stub](https://github.com/defra/ffc-sfd-ahwr-stub)
+- [ffc-sfd-ahwp-stub](https://github.com/defra/ffc-sfd-ahwp-stub)
 
 ## Scripts
 

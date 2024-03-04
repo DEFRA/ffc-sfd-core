@@ -24,7 +24,7 @@ projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pw
     test -d ffc-sfd-data\
     && >&2 echo "The 'ffc-sfd-data' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-data.git
-  test -d ffc-sfd-ahwr-stub\
-    && >&2 echo "The 'ffc-sfd-ahwr-stub' repository already exists. Skipping." \
-    || git clone https://github.com/DEFRA/ffc-sfd-ahwr-stub.git
+  test -d ffc-sfd-ahwp-stub\
+    && >&2 echo "The 'ffc-sfd-ahwp-stub' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-ahwp-stub.git
 )

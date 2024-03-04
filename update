@@ -46,6 +46,6 @@ cd ./ffc-sfd-data && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-ahwr-stub && \
+cd ./ffc-sfd-ahwp-stub && \
   git checkout main && \
   git pull

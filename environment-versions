@@ -56,6 +56,6 @@ echo
 echo 'ffc-sfd-data: ' &&
   kubectl get deployment ffc-sfd-data -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
-echo 'ffc-sfd-ahwr-stub: ' &&
-  kubectl get deployment ffc-sfd-ahwr-stub -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo 'ffc-sfd-ahwp-stub: ' &&
+  kubectl get deployment ffc-sfd-ahwp-stub -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo

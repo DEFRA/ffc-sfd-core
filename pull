@@ -41,5 +41,5 @@ cd "${projectRoot}"
 cd ./ffc-sfd-data && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-ahwr-stub && \
+cd ./ffc-sfd-ahwp-stub && \
   git pull
