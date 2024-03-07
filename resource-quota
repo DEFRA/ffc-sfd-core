@@ -8,6 +8,8 @@ arr=(
   "ffc-sfd-landing-page"
   "ffc-sfd-auth"
   "ffc-sfd-data"
+  "ffc-sfd-permissions"
+  "ffc-sfd-preferences-api"
   )
 
 for i in "${arr[@]}"

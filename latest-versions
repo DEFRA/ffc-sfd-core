@@ -15,5 +15,11 @@ echo 'ffc-sfd-ingress' &&
 echo 'ffc-sfd-data' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-data/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
 
+echo 'ffc-sfd-permissions' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-permissions/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-preferences-api' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-preferences-api/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
 echo 'ffc-sfd-ahwp-stub' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-ahwp-stub/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'

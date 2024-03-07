@@ -21,9 +21,15 @@ projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pw
   test -d ffc-sfd-ingress\
     && >&2 echo "The 'ffc-sfd-ingress' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-ingress.git
-    test -d ffc-sfd-data\
+  test -d ffc-sfd-data\
     && >&2 echo "The 'ffc-sfd-data' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-data.git
+  test -d ffc-sfd-permissions\
+    && >&2 echo "The 'ffc-sfd-permissions' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-permissions.git
+  test -d ffc-sfd-preferences-api\
+    && >&2 echo "The 'ffc-sfd-preferences-api' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-preferences-api.git
   test -d ffc-sfd-ahwp-stub\
     && >&2 echo "The 'ffc-sfd-ahwp-stub' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-ahwp-stub.git
