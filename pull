@@ -44,7 +44,7 @@ cd "${projectRoot}"
 cd ./ffc-sfd-permissions && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-preferences-api && \
+cd ./ffc-sfd-permissions-api && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \

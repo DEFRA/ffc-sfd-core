@@ -13,7 +13,7 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 - [ffc-sfd-ingress](https://github.com/defra/ffc-sfd-ingress)
 - [ffc-sfd-data](https://github.com/defra/ffc-sfd-data)
 - [ffc-sfd-permissions](https://github.com/defra/ffc-sfd-permissions)
-- [ffc-sfd-preferences-api](https://github.com/defra/ffc-sfd-preferences-api)
+- [ffc-sfd-permissions-api](https://github.com/defra/ffc-sfd-permissions-api)
 - [ffc-sfd-ahwp-stub](https://github.com/defra/ffc-sfd-ahwp-stub)
 
 ## Scripts

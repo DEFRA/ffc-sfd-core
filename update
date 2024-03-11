@@ -50,7 +50,7 @@ cd ./ffc-sfd-permissions && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-preferences-api && \
+cd ./ffc-sfd-permissions-api && \
   git checkout main && \
   git pull
 cd "${projectRoot}"

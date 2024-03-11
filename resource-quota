@@ -9,7 +9,7 @@ arr=(
   "ffc-sfd-auth"
   "ffc-sfd-data"
   "ffc-sfd-permissions"
-  "ffc-sfd-preferences-api"
+  "ffc-sfd-permissions-api"
   )
 
 for i in "${arr[@]}"

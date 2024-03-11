@@ -41,7 +41,7 @@ cd "${projectRoot}"
 cd ./ffc-sfd-permissions && \
   docker-compose build
 cd "${projectRoot}"
-cd ./ffc-sfd-preferences-api && \
+cd ./ffc-sfd-permissions-api && \
   docker-compose build
 cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \
