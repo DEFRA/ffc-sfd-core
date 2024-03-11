@@ -6,6 +6,9 @@ echo 'ffc-sfd-landing-page' &&
 echo 'ffc-sfd-auth' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-auth/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
 
+echo 'ffc-sfd-business' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-business/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
 echo 'ffc-sfd-proxy' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-proxy/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
 

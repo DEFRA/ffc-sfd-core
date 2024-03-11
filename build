@@ -32,6 +32,9 @@ cd "${projectRoot}"
 cd ./ffc-sfd-auth && \
   docker-compose build
 cd "${projectRoot}"
+cd ./ffc-sfd-business && \
+  docker-compose build
+cd "${projectRoot}"
 cd ./ffc-sfd-proxy && \
   docker-compose build
 cd "${projectRoot}"

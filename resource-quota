@@ -7,6 +7,7 @@ totalPods=0
 arr=(
   "ffc-sfd-landing-page"
   "ffc-sfd-auth"
+  "ffc-sfd-business"
   "ffc-sfd-data"
   "ffc-sfd-permissions"
   "ffc-sfd-permissions-api"

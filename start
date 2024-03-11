@@ -35,6 +35,7 @@ cd "${projectRoot}"
 
 ./ffc-sfd-landing-page/scripts/start -d;
 ./ffc-sfd-auth/scripts/start -d;
-./ffc-sfd-proxy/scripts/start -d;
+./ffc-sfd-business/scripts/start -d;
 ./ffc-sfd-data/scripts/start -d;
 ./ffc-sfd-ahwp-stub/scripts/start -d;
+./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications

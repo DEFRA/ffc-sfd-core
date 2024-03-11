@@ -34,11 +34,7 @@ cd ./ffc-sfd-auth && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-proxy && \
-  git checkout main && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-ingress && \
+cd ./ffc-sfd-business && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
@@ -55,5 +51,13 @@ cd ./ffc-sfd-permissions-api && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-proxy && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-ingress && \
   git checkout main && \
   git pull

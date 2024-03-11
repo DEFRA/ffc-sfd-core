@@ -53,6 +53,9 @@ echo
 echo 'ffc-sfd-auth: ' &&
   kubectl get deployment ffc-sfd-auth -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
+echo 'ffc-sfd-business: ' &&
+  kubectl get deployment ffc-sfd-business -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
 echo 'ffc-sfd-data: ' &&
   kubectl get deployment ffc-sfd-data -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
