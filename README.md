@@ -8,6 +8,7 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 ## Repositories
 - [ffc-sfd-gateway](https://github.com/defra/ffc-sfd-gateway)
 - [ffc-sfd-landing-page](https://github.com/defra/ffc-sfd-landing-page)
+- [ffc-sfd-business](https://github.com/defra/ffc-sfd-business)
 - [ffc-sfd-auth](https://github.com/defra/ffc-sfd-auth)
 - [ffc-sfd-proxy](https://github.com/defra/ffc-sfd-proxy)
 - [ffc-sfd-ingress](https://github.com/defra/ffc-sfd-ingress)
@@ -15,6 +16,8 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 - [ffc-sfd-ahwr-stub](https://github.com/defra/ffc-sfd-ahwr-stub)
 - [ffc-sfd-messages](https://github.com/DEFRA/ffc-sfd-messages)
 - [ffc-sfd-messages-processor](https://github.com/DEFRA/ffc-sfd-messages-processor)
+- [ffc-sfd-permissions](https://github.com/defra/ffc-sfd-permissions)
+- [ffc-sfd-permissions-api](https://github.com/defra/ffc-sfd-permissions-api)
 
 ## Scripts
 

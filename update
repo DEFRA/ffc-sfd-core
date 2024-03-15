@@ -34,6 +34,18 @@ cd ./ffc-sfd-auth && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
+cd ./ffc-sfd-business && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-data && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-ahwp-stub && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
 cd ./ffc-sfd-proxy && \
   git checkout main && \
   git pull
@@ -42,18 +54,18 @@ cd ./ffc-sfd-ingress && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-data && \
-  git checkout main && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-ahwr-stub && \
-  git checkout main && \
-  git pull
-cd "${projectRoot}"
 cd ./ffc-sfd-messages && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-permissions && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-permissions-api && \
   git checkout main && \
   git pull
