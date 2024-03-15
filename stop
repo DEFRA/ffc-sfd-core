@@ -41,6 +41,12 @@ cd "${projectRoot}"
 cd ./ffc-sfd-data && \
   docker-compose down $@
 cd "${projectRoot}"
+cd ./ffc-sfd-permissions && \
+  docker-compose down $@
+cd "${projectRoot}"
+cd ./ffc-sfd-permissions-api && \
+  docker-compose down $@
+cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \
   docker-compose down $@
 cd "${projectRoot}"
@@ -48,10 +54,4 @@ cd ./ffc-sfd-messages && \
   docker-compose down $@
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
-  docker-compose down $@
-cd "${projectRoot}"
-cd ./ffc-sfd-permissions && \
-  docker-compose down $@
-cd "${projectRoot}"
-cd ./ffc-sfd-permissions-api && \
   docker-compose down $@

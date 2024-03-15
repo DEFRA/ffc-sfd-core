@@ -62,6 +62,12 @@ echo
 echo 'ffc-sfd-data: ' &&
   kubectl get deployment ffc-sfd-data -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
+echo 'ffc-sfd-permissions: ' &&
+  kubectl get deployment ffc-sfd-permissions -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
+echo 'ffc-sfd-permissions-api: ' &&
+  kubectl get deployment ffc-sfd-permissions-api -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
 echo 'ffc-sfd-ahwp-stub: ' &&
   kubectl get deployment ffc-sfd-ahwp-stub -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
@@ -70,10 +76,4 @@ echo 'ffc-sfd-messages: ' &&
 echo
 echo 'ffc-sfd-messages-processor: ' &&
   kubectl get deployment ffc-sfd-messages-processor -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
-echo
-echo 'ffc-sfd-permissions: ' &&
-  kubectl get deployment ffc-sfd-permissions -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
-echo
-echo 'ffc-sfd-permissions-api: ' &&
-  kubectl get deployment ffc-sfd-permissions-api -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo

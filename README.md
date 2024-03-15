@@ -13,11 +13,11 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 - [ffc-sfd-proxy](https://github.com/defra/ffc-sfd-proxy)
 - [ffc-sfd-ingress](https://github.com/defra/ffc-sfd-ingress)
 - [ffc-sfd-data](https://github.com/defra/ffc-sfd-data)
+- [ffc-sfd-permissions](https://github.com/defra/ffc-sfd-permissions)
+- [ffc-sfd-permissions-api](https://github.com/defra/ffc-sfd-permissions-api)
 - [ffc-sfd-ahwr-stub](https://github.com/defra/ffc-sfd-ahwr-stub)
 - [ffc-sfd-messages](https://github.com/DEFRA/ffc-sfd-messages)
 - [ffc-sfd-messages-processor](https://github.com/DEFRA/ffc-sfd-messages-processor)
-- [ffc-sfd-permissions](https://github.com/defra/ffc-sfd-permissions)
-- [ffc-sfd-permissions-api](https://github.com/defra/ffc-sfd-permissions-api)
 
 ## Scripts
 

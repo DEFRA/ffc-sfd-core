@@ -38,6 +38,12 @@ cd "${projectRoot}"
 cd ./ffc-sfd-data && \
   git pull
 cd "${projectRoot}"
+cd ./ffc-sfd-permissions && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-permissions-api && \
+  git pull
+cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \
   git pull
 cd "${projectRoot}"
@@ -51,10 +57,4 @@ cd ./ffc-sfd-messages && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-permissions && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-permissions-api && \
   git pull

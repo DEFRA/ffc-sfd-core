@@ -9,10 +9,10 @@ arr=(
   "ffc-sfd-auth"
   "ffc-sfd-business"
   "ffc-sfd-data"
-  "ffc-sfd-messages"
-  "ffc-sfd-messages-processor"
   "ffc-sfd-permissions"
   "ffc-sfd-permissions-api"
+  "ffc-sfd-messages"
+  "ffc-sfd-messages-processor"
   )
 
 for i in "${arr[@]}"
