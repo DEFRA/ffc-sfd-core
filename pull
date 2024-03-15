@@ -43,3 +43,9 @@ cd ./ffc-sfd-data && \
 cd "${projectRoot}"
 cd ./ffc-sfd-ahwr-stub && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages-processor && \
+  git pull

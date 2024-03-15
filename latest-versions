@@ -17,3 +17,9 @@ echo 'ffc-sfd-data' &&
 
 echo 'ffc-sfd-ahwr-stub' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-ahwr-stub/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-messages' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-messages/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-messages-processor' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-messages-processor/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'

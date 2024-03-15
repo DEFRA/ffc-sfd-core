@@ -38,3 +38,5 @@ cd "${projectRoot}"
 ./ffc-sfd-proxy/scripts/start -d;
 ./ffc-sfd-data/scripts/start -d;
 ./ffc-sfd-ahwr-stub/scripts/start -d;
+./ffc-sfd-messages/scripts/start -d;
+./ffc-sfd-messages-processor/scripts/start -d;

@@ -49,3 +49,11 @@ cd "${projectRoot}"
 cd ./ffc-sfd-ahwr-stub && \
   git checkout main && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages-processor && \
+  git checkout main && \
+  git pull

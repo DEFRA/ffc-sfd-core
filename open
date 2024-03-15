@@ -33,3 +33,5 @@ code ./ffc-sfd-proxy;
 code ./ffc-sfd-ingress;
 code ./ffc-sfd-data;
 code ./ffc-sfd-ahwr-stub;
+code ./ffc-sfd-messages;
+code ./ffc-sfd-messages-processor;

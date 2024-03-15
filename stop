@@ -40,3 +40,9 @@ cd ./ffc-sfd-data && \
 cd "${projectRoot}"
 cd ./ffc-sfd-ahwr-stub && \
   docker-compose down $@
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  docker-compose down $@
+cd "${projectRoot}"
+cd ./ffc-sfd-messages-processor && \
+  docker-compose down $@
