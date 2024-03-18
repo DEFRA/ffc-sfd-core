@@ -52,3 +52,9 @@ cd ./ffc-sfd-proxy && \
 cd "${projectRoot}"
 cd ./ffc-sfd-ingress && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages-processor && \
+  git pull

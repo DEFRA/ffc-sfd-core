@@ -49,3 +49,9 @@ cd ./ffc-sfd-permissions-api && \
 cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-messages-processor && \
+  docker-compose build

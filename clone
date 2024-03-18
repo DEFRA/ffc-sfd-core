@@ -36,4 +36,10 @@ projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pw
   test -d ffc-sfd-ahwp-stub\
     && >&2 echo "The 'ffc-sfd-ahwp-stub' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-ahwp-stub.git
+  test -d ffc-sfd-messages\
+    && >&2 echo "The 'ffc-sfd-messages' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-messages.git
+  test -d ffc-sfd-messages-processor\
+    && >&2 echo "The 'ffc-sfd-messages-processor' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-messages-processor.git
 )

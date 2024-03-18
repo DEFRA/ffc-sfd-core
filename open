@@ -36,3 +36,5 @@ code ./ffc-sfd-permissions-api;
 code ./ffc-sfd-ahwp-stub;
 code ./ffc-sfd-proxy;
 code ./ffc-sfd-ingress;
+code ./ffc-sfd-messages;
+code ./ffc-sfd-messages-processor;

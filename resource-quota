@@ -11,6 +11,9 @@ arr=(
   "ffc-sfd-data"
   "ffc-sfd-permissions"
   "ffc-sfd-permissions-api"
+  "ffc-sfd-ahwp-stub"
+  "ffc-sfd-messages"
+  "ffc-sfd-messages-processor"
   )
 
 for i in "${arr[@]}"
