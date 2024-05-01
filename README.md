@@ -18,6 +18,7 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 - [ffc-sfd-ahwp-stub](https://github.com/defra/ffc-sfd-ahwp-stub)
 - [ffc-sfd-messages](https://github.com/DEFRA/ffc-sfd-messages)
 - [ffc-sfd-messages-processor](https://github.com/DEFRA/ffc-sfd-messages-processor)
+- [ffc-sfd-customer-receiver-messages](https://github.com/DEFRA/ffc-sfd-customer-receiver-messages)
 
 ## Scripts
 

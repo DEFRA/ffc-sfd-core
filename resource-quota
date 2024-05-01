@@ -14,6 +14,7 @@ arr=(
   "ffc-sfd-ahwp-stub"
   "ffc-sfd-messages"
   "ffc-sfd-messages-processor"
+  "ffc-sfd-customer-receiver-messages"
   )
 
 for i in "${arr[@]}"
