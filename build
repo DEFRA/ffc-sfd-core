@@ -55,3 +55,6 @@ cd ./ffc-sfd-messages && \
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-messages && \
+  docker-compose build
