@@ -58,3 +58,6 @@ cd ./ffc-sfd-messages && \
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-messages && \
+  git pull
