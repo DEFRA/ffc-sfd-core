@@ -39,3 +39,4 @@ code ./ffc-sfd-ingress;
 code ./ffc-sfd-messages;
 code ./ffc-sfd-messages-processor;
 code ./ffc-sfd-customer-receiver-messages;
+code ./ffc-sfd-customer-receiver-payments;

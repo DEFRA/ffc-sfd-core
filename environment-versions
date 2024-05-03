@@ -77,3 +77,6 @@ echo
 echo 'ffc-sfd-customer-receiver-messages: ' &&
   kubectl get deployment ffc-sfd-customer-receiver-messages -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
+echo 'ffc-sfd-customer-receiver-payments: ' &&
+  kubectl get deployment ffc-sfd-customer-receiver-payments -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo

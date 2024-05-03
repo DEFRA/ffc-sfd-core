@@ -36,3 +36,6 @@ echo 'ffc-sfd-messages-processor' &&
 echo 'ffc-sfd-customer-receiver-messages' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-customer-receiver-messages/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
 
+echo 'ffc-sfd-customer-receiver-payments' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-customer-receiver-payments/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
