@@ -45,4 +45,7 @@ projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pw
   test -d ffc-sfd-customer-receiver-messages\
     && >&2 echo "The 'ffc-sfd-customer-receiver-messages' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-customer-receiver-messages.git
+  test -d ffc-sfd-customer-receiver-payments\
+    && >&2 echo "The 'ffc-sfd-customer-receiver-payments' repository already exists. Skipping." \
+    || git clone https://github.com/DEFRA/ffc-sfd-customer-receiver-payments.git
 )

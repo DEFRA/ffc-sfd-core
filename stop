@@ -58,3 +58,6 @@ cd ./ffc-sfd-messages-processor && \
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-messages && \
   docker-compose down $@
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-payments && \
+  docker-compose down $@

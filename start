@@ -43,4 +43,5 @@ cd "${projectRoot}"
 ./ffc-sfd-messages/scripts/start -d;
 ./ffc-sfd-messages-processor/scripts/start -d;
 ./ffc-sfd-customer-receiver-messages/scripts/start -d;
+./ffc-sfd-customer-receiver-payments/scripts/start -d;
 ./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications
