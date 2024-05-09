@@ -64,3 +64,6 @@ cd ./ffc-sfd-customer-receiver-messages && \
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-payments && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-preferences && \
+  git pull

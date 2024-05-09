@@ -80,3 +80,6 @@ echo
 echo 'ffc-sfd-customer-receiver-payments: ' &&
   kubectl get deployment ffc-sfd-customer-receiver-payments -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
+echo 'ffc-sfd-customer-receiver-preferences: ' &&
+  kubectl get deployment ffc-sfd-customer-receiver-preferences -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
