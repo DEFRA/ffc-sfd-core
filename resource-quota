@@ -16,6 +16,7 @@ arr=(
   "ffc-sfd-messages-processor"
   "ffc-sfd-customer-receiver-messages"
   "ffc-sfd-customer-receiver-payments"
+  "ffc-sfd-customer-receiver-preferences"
   )
 
 for i in "${arr[@]}"
