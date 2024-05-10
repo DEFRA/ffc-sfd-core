@@ -6,7 +6,7 @@ fi
 
 set -e
 projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)"
-payments="true"
+sfd="true"
 
 show_help() {
   echo "
@@ -20,6 +20,10 @@ show_help() {
 
 while :; do
   case $1 in    
+    -D|--data-only)
+      sfd="false"
+      data="true"
+      ;;  
     -h|--help)   # Call a "show_help" function to display a synopsis, then exit.
       show_help
       exit
@@ -33,16 +37,39 @@ done
 
 cd "${projectRoot}"
 
-./ffc-sfd-landing-page/scripts/start -d;
-./ffc-sfd-auth/scripts/start -d;
-./ffc-sfd-business/scripts/start -d;
-./ffc-sfd-data/scripts/start -d;
-./ffc-sfd-permissions/scripts/start -d;
-./ffc-sfd-permissions-api/scripts/start -d;
-./ffc-sfd-ahwp-stub/scripts/start -d;
-./ffc-sfd-messages/scripts/start -d;
-./ffc-sfd-messages-processor/scripts/start -d;
-./ffc-sfd-customer-receiver-messages/scripts/start -d;
-./ffc-sfd-customer-receiver-payments/scripts/start -d;
-./ffc-sfd-customer-receiver-preferences/scripts/start -d;
-./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications
+if [ "${sfd}" = "true" ]; then
+  ./ffc-sfd-data/scripts/start -d;
+  echo "Waiting for cosmosDB to start" # Cosmos is a dependency for receiver services
+  echo "Cosmos countdown:"
+  for ((i=90; i>=1; i--)); do
+    printf "\r$i"
+    sleep 1
+  done
+  printf "Cosmos countdown complete"
+  ./ffc-sfd-landing-page/scripts/start -d;
+  ./ffc-sfd-auth/scripts/start -d;
+  ./ffc-sfd-business/scripts/start -d;
+  ./ffc-sfd-permissions/scripts/start -d;
+  ./ffc-sfd-permissions-api/scripts/start -d;
+  ./ffc-sfd-ahwp-stub/scripts/start -d;
+  ./ffc-sfd-messages/scripts/start -d;
+  ./ffc-sfd-messages-processor/scripts/start -d;
+  ./ffc-sfd-customer-receiver-messages/scripts/start -d;
+  ./ffc-sfd-customer-receiver-payments/scripts/start -d;
+  ./ffc-sfd-customer-receiver-preferences/scripts/start -d;
+  ./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications
+fi
+
+if [ "${data}" = "true" ]; then
+  ./ffc-sfd-data/scripts/start -d;
+  echo "Waiting for cosmosDB to start" # Wait for cosmosDB to start
+  echo "Cosmos countdown:"
+  for ((i=90; i>=1; i--)); do
+    printf "\r$i"
+    sleep 1
+  done
+  printf "Cosmos countdown complete"
+  ./ffc-sfd-customer-receiver-messages/scripts/start -d;
+  ./ffc-sfd-customer-receiver-payments/scripts/start -d;
+  ./ffc-sfd-customer-receiver-preferences/scripts/start -d;
+fi
