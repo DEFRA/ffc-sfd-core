@@ -6,7 +6,8 @@ fi
 
 set -e
 projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)"
-payments="true"
+sfd="true"
+receivers="true"
 
 show_help() {
   echo "
@@ -14,12 +15,23 @@ show_help() {
     Run services.
 
     Options:
-      -h, --help       display this help text
+      -h, --help               display this help text
+      -d, --data-only          run ffc-sfd-data and receivers only no other sfd services
+      -r, --receivers-disabled run ffc-sfd with ffc-sfd-data but without receiver services
+
     "
 }
 
 while :; do
   case $1 in    
+    -d|--data-only)
+      sfd="false"
+      data="true"
+      receivers="true"
+      ;;
+    -r|--receivers-disabled)
+      receivers="false"
+      ;;  
     -h|--help)   # Call a "show_help" function to display a synopsis, then exit.
       show_help
       exit
@@ -33,16 +45,30 @@ done
 
 cd "${projectRoot}"
 
-./ffc-sfd-landing-page/scripts/start -d;
-./ffc-sfd-auth/scripts/start -d;
-./ffc-sfd-business/scripts/start -d;
-./ffc-sfd-data/scripts/start -d;
-./ffc-sfd-permissions/scripts/start -d;
-./ffc-sfd-permissions-api/scripts/start -d;
-./ffc-sfd-ahwp-stub/scripts/start -d;
-./ffc-sfd-messages/scripts/start -d;
-./ffc-sfd-messages-processor/scripts/start -d;
-./ffc-sfd-customer-receiver-messages/scripts/start -d;
-./ffc-sfd-customer-receiver-payments/scripts/start -d;
-./ffc-sfd-customer-receiver-preferences/scripts/start -d;
-./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications
+if [ "${sfd}" = "true" ]; then
+  ./ffc-sfd-data/scripts/start -d;
+  echo "Waiting for cosmosDB to start"
+  ./ffc-sfd-landing-page/scripts/start -d;
+  ./ffc-sfd-auth/scripts/start -d;
+  ./ffc-sfd-business/scripts/start -d;
+  ./ffc-sfd-permissions/scripts/start -d;
+  ./ffc-sfd-permissions-api/scripts/start -d;
+  ./ffc-sfd-ahwp-stub/scripts/start -d;
+  ./ffc-sfd-messages/scripts/start -d;
+  ./ffc-sfd-messages-processor/scripts/start -d;
+  ./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications
+fi
+
+if [ "${receivers}" = "true" ]; then
+  ./ffc-sfd-customer-receiver-messages/scripts/start -d;
+  ./ffc-sfd-customer-receiver-payments/scripts/start -d;
+  ./ffc-sfd-customer-receiver-preferences/scripts/start -d;
+fi
+
+if [ "${data}" = "true" ]; then
+  ./ffc-sfd-data/scripts/start -d;
+  echo "Waiting for cosmosDB to start"
+  ./ffc-sfd-customer-receiver-messages/scripts/start -d;
+  ./ffc-sfd-customer-receiver-payments/scripts/start -d;
+  ./ffc-sfd-customer-receiver-preferences/scripts/start -d;
+fi
