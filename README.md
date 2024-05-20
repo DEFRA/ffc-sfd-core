@@ -98,8 +98,22 @@ List current environment version for each microservice hosted in Kubernetes.
 - `-c | --cluster` - Kubernetes cluster context name
 - `-n | --namespace` - Kubernetes namespace
 
+#### Resources
+`./resources/cosmos-upload`  
+
+Upload multiple items to a local emulator instance of cosmos. Follow the command prompt to provide:
+- crn
+- sbi
+- database name
+- container name
+- quantity
+
+Currently the items uploaded match the messages-database schema only.
+
 ### Resource quota
 
 Determine the Kubernetes resource usage for a namespace based on all microservices running at maximum capacity and scaling.
 
 [`./resource-quota`](resource-quota)
+
+
