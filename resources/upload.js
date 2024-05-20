@@ -13,8 +13,8 @@ const uploadData = async () => {
     const item = {
       scheme: 'AHWP',
       tags: ['tag 1', 'tag 2'],
-      crn: `${process.argv[3]}`,
-      sbi: `${process.argv[2]}`,
+      crn: `${process.argv[2]}`,
+      sbi: `${process.argv[3]}`,
       heading: `There is an update about your AHWP application ${i + 1}`,
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac mauris nec nisl aliquam eleifend.',
       requestedDate: '12-05-2024'
