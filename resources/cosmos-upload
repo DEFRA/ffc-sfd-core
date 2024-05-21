@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)"
+
+echo "Enter CRN (default 1):"
+read -r input_crn
+crn=${input_crn:-1}
+
+echo "Enter SBI (default 1):"
+read -r input_sbi
+sbi=${input_sbi:-1}
+
+echo "Enter Database Name (default 'ffc-sfd-customer-receiver-messages'):"
+read -r input_database
+database=${input_database:-'ffc-sfd-customer-receiver-messages'}
+
+echo "Enter Container Name (default 'messages-container'):"
+read -r input_container
+container=${input_container:-'messages-container'}
+
+echo "Enter Quantity (default 1):"
+read -r input_quantity
+quantity=${input_quantity:-1}
+
+cd "${projectRoot}"
+
+node resources/upload.js "$crn" "$sbi" "$database" "$container" "$quantity"
