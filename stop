@@ -50,6 +50,9 @@ cd "${projectRoot}"
 cd ./ffc-sfd-ahwp-stub && \
   docker-compose down $@
 cd "${projectRoot}"
+cd ./ffc-sfd-queries && \
+  docker-compose down $@
+cd "${projectRoot}"
 cd ./ffc-sfd-messages && \
   docker-compose down $@
 cd "${projectRoot}"
@@ -66,7 +69,4 @@ cd ./ffc-sfd-customer-receiver-preferences && \
   docker-compose down $@
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-queries && \
-  docker-compose down $@
-cd "${projectRoot}"
-cd ./ffc-sfd-queries && \
   docker-compose down $@
