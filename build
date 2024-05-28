@@ -64,3 +64,6 @@ cd ./ffc-sfd-customer-receiver-payments && \
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-preferences && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-queries && \
+  docker-compose build

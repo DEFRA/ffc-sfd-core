@@ -81,3 +81,7 @@ cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-preferences && \
   git checkout main && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-queries && \
+  git checkout main && \
+  git pull

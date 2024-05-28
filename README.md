@@ -21,6 +21,7 @@ Ensure you have satisfied the prerequisites of all individual repositories.
 - [ffc-sfd-customer-receiver-messages](https://github.com/DEFRA/ffc-sfd-customer-receiver-messages)
 - [ffc-sfd-customer-receiver-payments](https://github.com/DEFRA/ffc-sfd-customer-receiver-payments)
 - [ffc-sfd-customer-receiver-preferences](https://github.com/DEFRA/ffc-sfd-customer-receiver-preferences)
+- [ffc-sfd-customer-receiver-queries](https://github.com/DEFRA/ffc-sfd-customer-receiver-queries)
 
 ## Scripts
 

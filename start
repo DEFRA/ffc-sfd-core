@@ -63,6 +63,7 @@ if [ "${receivers}" = "true" ]; then
   ./ffc-sfd-customer-receiver-messages/scripts/start -d;
   ./ffc-sfd-customer-receiver-payments/scripts/start -d;
   ./ffc-sfd-customer-receiver-preferences/scripts/start -d;
+  ./ffc-sfd-customer-receiver-queries/scripts/start -d;
 fi
 
 if [ "${data}" = "true" ]; then
@@ -71,4 +72,5 @@ if [ "${data}" = "true" ]; then
   ./ffc-sfd-customer-receiver-messages/scripts/start -d;
   ./ffc-sfd-customer-receiver-payments/scripts/start -d;
   ./ffc-sfd-customer-receiver-preferences/scripts/start -d;
+  ./ffc-sfd-customer-receiver-queries/scripts/start -d;
 fi
