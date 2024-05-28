@@ -25,9 +25,27 @@ while :; do
   shift
 done
 
+# Frontends
 cd "${projectRoot}"
 cd ./ffc-sfd-landing-page && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-proxy && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-ahwp-stub && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-permissions && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-queries && \
+  git pull
+
+# Backends
 cd "${projectRoot}"
 cd ./ffc-sfd-auth && \
   git pull
@@ -35,28 +53,18 @@ cd "${projectRoot}"
 cd ./ffc-sfd-business && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-data && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-permissions && \
+cd ./ffc-sfd-ingress && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-permissions-api && \
   git pull
 cd "${projectRoot}"
-cd ./ffc-sfd-ahwp-stub && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-proxy && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-ingress && \
-  git pull
-cd "${projectRoot}"
-cd ./ffc-sfd-messages && \
-  git pull
-cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
+  git pull
+
+# Customer 
+cd "${projectRoot}"
+cd ./ffc-sfd-data && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-messages && \
@@ -66,4 +74,7 @@ cd ./ffc-sfd-customer-receiver-payments && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-preferences && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-queries && \
   git pull

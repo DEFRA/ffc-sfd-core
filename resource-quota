@@ -12,11 +12,13 @@ arr=(
   "ffc-sfd-permissions"
   "ffc-sfd-permissions-api"
   "ffc-sfd-ahwp-stub"
+  "ffc-sfd-queries"
   "ffc-sfd-messages"
   "ffc-sfd-messages-processor"
   "ffc-sfd-customer-receiver-messages"
   "ffc-sfd-customer-receiver-payments"
   "ffc-sfd-customer-receiver-preferences"
+  "ffc-sfd-customer-receiver-queries"
   )
 
 for i in "${arr[@]}"

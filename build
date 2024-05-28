@@ -25,9 +25,27 @@ while :; do
   shift
 done
 
+# Frontends
 cd "${projectRoot}"
 cd ./ffc-sfd-landing-page && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-proxy && \
+  docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-ahwp-stub && \
+  docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-permissions && \
+  docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-messages && \
+  docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-queries && \
+  docker-compose build
+
+# Backends
 cd "${projectRoot}"
 cd ./ffc-sfd-auth && \
   docker-compose build
@@ -35,25 +53,15 @@ cd "${projectRoot}"
 cd ./ffc-sfd-business && \
   docker-compose build
 cd "${projectRoot}"
-cd ./ffc-sfd-proxy && \
-  docker-compose build
-cd "${projectRoot}"
-cd ./ffc-sfd-data && \
-  docker-compose build
-cd "${projectRoot}"
-cd ./ffc-sfd-permissions && \
-  docker-compose build
-cd "${projectRoot}"
 cd ./ffc-sfd-permissions-api && \
   docker-compose build
 cd "${projectRoot}"
-cd ./ffc-sfd-ahwp-stub && \
-  docker-compose build
-cd "${projectRoot}"
-cd ./ffc-sfd-messages && \
-  docker-compose build
-cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
+  docker-compose build
+
+# Customer 
+cd "${projectRoot}"
+cd ./ffc-sfd-data && \
   docker-compose build
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-messages && \
@@ -63,4 +71,7 @@ cd ./ffc-sfd-customer-receiver-payments && \
   docker-compose build
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-preferences && \
+  docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-queries && \
   docker-compose build

@@ -62,6 +62,10 @@ cd ./ffc-sfd-ingress && \
   git checkout main && \
   git pull
 cd "${projectRoot}"
+cd ./ffc-sfd-queries && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
 cd ./ffc-sfd-messages && \
   git checkout main && \
   git pull
@@ -79,5 +83,9 @@ cd ./ffc-sfd-customer-receiver-payments && \
   git pull
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-preferences && \
+  git checkout main && \
+  git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-customer-receiver-queries && \
   git checkout main && \
   git pull

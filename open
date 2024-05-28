@@ -27,17 +27,24 @@ done
 
 cd "${projectRoot}"
 
+# Frontends
 code ./ffc-sfd-landing-page;
+code ./ffc-sfd-proxy;
+code ./ffc-sfd-ahwp-stub;
+code ./ffc-sfd-permissions;
+code ./ffc-sfd-messages;
+code ./ffc-sfd-queries;
+
+# Backends
 code ./ffc-sfd-auth;
 code ./ffc-sfd-business;
-code ./ffc-sfd-data;
-code ./ffc-sfd-permissions;
-code ./ffc-sfd-permissions-api;
-code ./ffc-sfd-ahwp-stub;
-code ./ffc-sfd-proxy;
 code ./ffc-sfd-ingress;
-code ./ffc-sfd-messages;
+code ./ffc-sfd-permissions-api;
 code ./ffc-sfd-messages-processor;
+
+# Customer 
+code ./ffc-sfd-data;
 code ./ffc-sfd-customer-receiver-messages;
 code ./ffc-sfd-customer-receiver-payments;
 code ./ffc-sfd-customer-receiver-preferences;
+code ./ffc-sfd-customer-receiver-queries;

@@ -83,3 +83,9 @@ echo
 echo 'ffc-sfd-customer-receiver-preferences: ' &&
   kubectl get deployment ffc-sfd-customer-receiver-preferences -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
+echo 'ffc-sfd-customer-receiver-queries: ' &&
+  kubectl get deployment ffc-sfd-customer-receiver-queries -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
+echo 'ffc-sfd-queries: ' &&
+  kubectl get deployment ffc-sfd-queries -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
