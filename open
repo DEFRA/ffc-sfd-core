@@ -42,3 +42,4 @@ code ./ffc-sfd-customer-receiver-messages;
 code ./ffc-sfd-customer-receiver-payments;
 code ./ffc-sfd-customer-receiver-preferences;
 code ./ffc-sfd-customer-receiver-queries;
+code ./ffc-sfd-queries;

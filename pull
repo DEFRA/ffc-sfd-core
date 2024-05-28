@@ -70,3 +70,6 @@ cd ./ffc-sfd-customer-receiver-preferences && \
 cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-queries && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-queries && \
+  git pull
