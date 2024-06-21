@@ -115,12 +115,10 @@ Upload multiple items to a local emulator instance of cosmos. Follow the command
 - container name
 - quantity
 
-Currently the items uploaded match the messages-database schema only.
+Currently the items uploaded match the messages and queries database schema only.
 
 ### Resource quota
 
 Determine the Kubernetes resource usage for a namespace based on all microservices running at maximum capacity and scaling.
 
 [`./resource-quota`](resource-quota)
-
-
