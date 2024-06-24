@@ -1,4 +1,5 @@
 const { CosmosClient } = require('@azure/cosmos')
+const { v4: uuidv4 } = require('uuid')
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
 const endpoint = 'https://localhost:8081'
@@ -10,6 +11,8 @@ const client = new CosmosClient({ endpoint, key })
 const uploadData = async () => {
   for (let i = 0; i < process.argv[6]; i++) {
     const item = {
+      ticketId: uuidv4(),
+      internalUser: false,
       name: `Jordan Doe`,
       crn: `${process.argv[2]}`,
       sbi: `${process.argv[3]}`,
