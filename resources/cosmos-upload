@@ -49,7 +49,7 @@ elif [ "$database" == "ffc-sfd-customer-receiver-queries" ]; then
 
   cd "${projectRoot}"
 
-  node resources/upload-queries.js "$name" "$crn" "$sbi" "$database" "$container" "$quantity"
+  node resources/upload-queries.js "$crn" "$sbi" "$database" "$container" "$quantity"
 
 else
   echo "Invalid database name. Please enter either 'ffc-sfd-customer-receiver-messages' or 'ffc-sfd-customer-receiver-queries'."
