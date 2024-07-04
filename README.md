@@ -5,6 +5,10 @@ Local development support for orchestrating all Single Front Door microservices.
 
 Ensure you have satisfied the prerequisites of all individual repositories.
 
+## Onboarding Guide
+
+For new software developers joining the SFD team, there is an [onboarding guide](https://github.com/DEFRA/ffc-sfd-core/blob/main/onboarding-guide/README.md) to get an instance of the local service up and running.
+
 ## Repositories
 ### Frontends
 - [ffc-sfd-landing-page](https://github.com/defra/ffc-sfd-landing-page)
@@ -115,6 +119,3 @@ Upload multiple items to a local emulator instance of Cosmos. Insert information
 Determine the Kubernetes resource usage for a namespace based on all microservices running at maximum capacity and scaling.
 
 [`./resource-quota`](resource-quota)
-
-## Onboarding Guide
-For new software developers joining the SFD team, there is an onboarding guide to get an instance of the local service up and running.
