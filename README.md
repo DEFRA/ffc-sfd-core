@@ -115,3 +115,6 @@ Upload multiple items to a local emulator instance of Cosmos. Insert information
 Determine the Kubernetes resource usage for a namespace based on all microservices running at maximum capacity and scaling.
 
 [`./resource-quota`](resource-quota)
+
+## Onboarding Guide
+For new software developers joining the SFD team, there is an onboarding guide to get an instance of the local service up and running.
