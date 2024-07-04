@@ -10,7 +10,7 @@ The SFD has a pretty large number of repositories that we're currently developin
 ./build
 ./start
 ```
-5. After all microservices have started up, navigate to `https://localost:3000/landing-page` via your browser and you should see the Single Front Door start page:
+5. After all microservices have started up, navigate to [https://localost:3000/landing-page](https://localost:3000/landing-page) via your browser and you should see the Single Front Door start page:
 ![sfd-start-page.png](https://github.com/defra/ffc-sfd-core/blob/main/onboarding-guide/PNGs/sfd-start-page.png)
 6. Click *Start now* and you should be redirected to Defra Identity (in other words, a login page). If in your `.env` file(s), `DEFRA_ID_ENBALED` is set to `true` you will need to log in using [Defra ID Test Data](https://eaflood.atlassian.net/wiki/spaces/VVAHWR/pages/4329538112/DEFRA+ID+Test+Data). If set to `false` then any string can be entered for the CRN and password fields:
 ![sfd-sign-in-page.png](https://github.com/defra/ffc-sfd-core/blob/main/onboarding-guide/PNGs/sfd-sign-in-page.png)
