@@ -58,6 +58,9 @@ cd ./ffc-sfd-permissions-api && \
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-crm && \
+  docker-compose build
 
 # Customer 
 cd "${projectRoot}"

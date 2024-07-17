@@ -89,3 +89,7 @@ cd "${projectRoot}"
 cd ./ffc-sfd-customer-receiver-queries && \
   git checkout main && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-crm && \
+  git checkout main && \
+  git pull
