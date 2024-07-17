@@ -61,6 +61,9 @@ cd ./ffc-sfd-permissions-api && \
 cd "${projectRoot}"
 cd ./ffc-sfd-messages-processor && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-crm && \
+  git pull
 
 # Customer 
 cd "${projectRoot}"

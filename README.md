@@ -25,6 +25,7 @@ For new software developers joining the SFD team, there is an [onboarding guide]
 - [ffc-sfd-gateway](https://github.com/defra/ffc-sfd-gateway)
 - [ffc-sfd-permissions-api](https://github.com/defra/ffc-sfd-permissions-api)
 - [ffc-sfd-messages-processor](https://github.com/DEFRA/ffc-sfd-messages-processor)
+- [ffc-sfd-crm](https://github.com/DEFRA/ffc-sfd-crm)
 
 ### Customer
 - [ffc-sfd-data](https://github.com/defra/ffc-sfd-data)

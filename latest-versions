@@ -47,3 +47,6 @@ echo 'ffc-sfd-customer-receiver-queries' &&
 
 echo 'ffc-sfd-queries' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-queries/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-sfd-crm' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-crm/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
