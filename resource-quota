@@ -20,6 +20,7 @@ arr=(
   "ffc-sfd-customer-receiver-preferences"
   "ffc-sfd-customer-receiver-queries"
   "ffc-sfd-crm"
+  "ffc-sfd-file-processor"
   )
 
 for i in "${arr[@]}"

@@ -42,6 +42,7 @@ code ./ffc-sfd-ingress;
 code ./ffc-sfd-permissions-api;
 code ./ffc-sfd-messages-processor;
 code ./ffc-sfd-crm;
+code ./ffc-sfd-file-processor;
 
 # Customer 
 code ./ffc-sfd-data;

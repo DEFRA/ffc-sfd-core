@@ -73,3 +73,6 @@ cd ./ffc-sfd-customer-receiver-queries && \
 cd "${projectRoot}"
 cd ./ffc-sfd-crm && \
   docker-compose down $@
+cd "${projectRoot}"
+cd ./ffc-sfd-file-processor && \
+  docker-compose down $@

@@ -50,3 +50,5 @@ echo 'ffc-sfd-queries' &&
 
 echo 'ffc-sfd-crm' &&
   curl --silent "https://api.github.com/repos/defra/ffc-sfd-crm/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+echo 'ffc-sfd-file-processor' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-sfd-file-processor/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
