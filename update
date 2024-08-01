@@ -93,3 +93,6 @@ cd "${projectRoot}"
 cd ./ffc-sfd-crm && \
   git checkout main && \
   git pull
+cd ./ffc-sfd-file-processor && \
+  git checkout main && \
+  git pull
