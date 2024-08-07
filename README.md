@@ -103,7 +103,7 @@ List latest GitHub release version for each microservice.
 
 ### Environment versions
 
-List current environment version for each microservice hosted in Kubernetes.
+List current environment version for each microservice hosted in Kubernetes. Further guidance on how to utilise the `./environment-versions` script is also [available on Confluence](https://eaflood.atlassian.net/wiki/spaces/SFD/pages/5056823438/Environment+versions+Using+kubectl+with+the+ffc-sfd-core+repo).
 
 [`./environment-versions`](environment-versions)
 
