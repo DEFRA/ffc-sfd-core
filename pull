@@ -67,6 +67,9 @@ cd ./ffc-sfd-crm && \
 cd "${projectRoot}"
 cd ./ffc-sfd-file-processor && \
   git pull
+cd "${projectRoot}"
+cd ./ffc-sfd-file-receiver && \
+  git pull
 
 # Customer 
 cd "${projectRoot}"

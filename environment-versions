@@ -95,3 +95,6 @@ echo
 echo 'ffc-sfd-file-processor: ' &&
   kubectl get deployment ffc-sfd-file-processor -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
 echo
+echo 'ffc-sfd-file-receiver: ' &&
+  kubectl get deployment ffc-sfd-file-receiver -o jsonpath='{.metadata.labels.app\.kubernetes\.io\/version}';
+echo
