@@ -63,7 +63,7 @@ projectRoot=$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pw
   test -d ffc-sfd-file-processor\
     && >&2 echo "The 'ffc-sfd-file-processor' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-file-processor.git
-  test -d ffc-sfd-file-processor\
+  test -d ffc-sfd-file-receiver\
     && >&2 echo "The 'ffc-sfd-file-receiver' repository already exists. Skipping." \
     || git clone https://github.com/DEFRA/ffc-sfd-file-receiver.git
 )
