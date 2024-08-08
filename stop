@@ -76,3 +76,6 @@ cd ./ffc-sfd-crm && \
 cd "${projectRoot}"
 cd ./ffc-sfd-file-processor && \
   docker-compose down $@
+cd "${projectRoot}"
+cd ./ffc-sfd-file-receiver && \
+  docker-compose down $@

@@ -64,6 +64,9 @@ cd ./ffc-sfd-crm && \
 cd "${projectRoot}"
 cd ./ffc-sfd-file-processor && \
   docker-compose build
+cd "${projectRoot}"
+cd ./ffc-sfd-file-receiver && \
+  docker-compose build
 
 # Customer 
 cd "${projectRoot}"

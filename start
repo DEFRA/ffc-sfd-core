@@ -59,6 +59,7 @@ if [ "${sfd}" = "true" ]; then
   ./ffc-sfd-queries/scripts/start -d;
   ./ffc-sfd-crm/scripts/start -d;
   ./ffc-sfd-file-processor/scripts/start -d;
+  ./ffc-sfd-file-receiver/scripts/start -d;
   ./ffc-sfd-proxy/scripts/start -d; # Must be after all web applications
 fi
 
