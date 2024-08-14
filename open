@@ -43,6 +43,7 @@ code ./ffc-sfd-permissions-api;
 code ./ffc-sfd-messages-processor;
 code ./ffc-sfd-crm;
 code ./ffc-sfd-file-processor;
+code ./ffc-sfd-file-receiver;
 
 # Customer 
 code ./ffc-sfd-data;
